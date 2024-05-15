@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Travel Website</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+     .heading{
+			width: 30%;
+			text-align: center;
+			color: #fff;
+		}
+		.heading h1{
+			font-size: 40px;
+		}
+		.heading a{
+			text-decoration: none;
+			color: #000;
+			font-size: 25px;
+			font-weight: bold;
+			border-radius: 45px;
+			padding: 14px 50px;
+			background-color: #fff;
+		}
+		.heading a:hover{
+			letter-spacing: 3px;
+			transition: 0.6s;
+		}
+        .booking-form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .navbar{
+			width: 100%;
+			height: 80px;
+			background-color: #FFFDD0;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			color: #000;
+		}
+        .menu ul{
+			display: flex;
+			align-items: center;
+		}
+		.menu ul li a{
+			text-decoration: none;
+			color: #000;
+			padding: 5px 12px;
+			letter-spacing: 2px;
+			font-size: 18px;
+		}
+		.menu ul li a:hover{
+			border-bottom: 4px solid #000;
+			transition: 0.4s;
+        }
+        .booking-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .booking-form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .booking-form input[type="text"],
+        .booking-form input[type="email"],
+        .booking-form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .booking-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .booking-form button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .booking-form button:hover {
+            background-color: #0056b3;
+        }
+        .footer{
+			width: 100%;
+			height: 50px;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.footer a{
+			text-decoration: none;
+			color: green;
+			font-size: 18px;
+			font-weight: bold;
+		}
+		.footer a:hover{
+			text-decoration: underline;
+			transition: 0.4s;
+		}
+    </style>
+</head>
+<body style="background-color: linear-gradient(#FFFDD0,rgb(11, 83, 39))">
+    <div class="navbar">
+        <div class="logo">
+            <h1>Trip Advicer</h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="sample.html">Home</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="places.html">Places</a></li>
+				<li><a href="discount.html">Discounts</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="booking.html">Booking</a></li>
+            </ul>
+        </div>
+        <div class="signup">
+            <a href="#">Sign Up</a>
+        </div>
+    </div>
+    <div class="body">
+        <!-- Booking form goes here -->
+        <div class="booking-form">
+            <h2>Book Your Trip</h2>
+            <form action="#" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="destination">Destination:</label>
+                <select id="destination" name="destination" required>
+                    <option value="">Select Destination</option>
+                    <option value="Australia">Australia</option>
+                    <option value="New York">New York</option>
+                    <option value="Thailand">Thailand</option>
+                </select>
+                
+                <label for="message">Additional Comments (optional):</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+                
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="#">Copyright</a>
+        <a href="#">Terms and Conditions</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Careers</a>
+        <a href="#">Feedback</a>
+    </div>
+</body>
+</html>
